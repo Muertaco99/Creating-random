@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#header{
+     color: brown;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+
+
+.enclosure {
+  display: flex;
+  gap: 20px; /* or 10%, px, rem — whatever spacing you want */
+  align-items: center; /* Optional: vertically align triangle with square */
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    
+}
+
+.triangle{
+    width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 80px solid red;
+    left: 20px;
+}
+
+.circle{
+    height: 80px;
+  width: 80px;
+  background-color: green;
+  border-radius: 50%;
+  left: 20px;
+}
+
+.rectangle{
+    height:40px;
+    width: 80px;
+    background-color: blue;
+}
+
+
+.star-five {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: yellow;
+      width: 0px;
+      height: 0px;
+      border-right: 40px solid transparent;
+      border-bottom: 28px solid yellow;
+      border-left: 40px solid transparent;
+      transform: rotate(35deg);
+    }
+
+    .star-five:before {
+      border-bottom: 32px solid yellow;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -18px;
+      left: -26px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+
+    .star-five:after {
+      position: absolute;
+      display: block;
+      color: yellow;
+      top: 3px;
+      left: -42px;
+      width: 0px;
+      height: 0px;
+      border-right: 40px solid transparent;
+      border-bottom: 28px solid yellow;
+      border-left: 40px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+
+    
+.rhombus{
+      width: 0;
+      height: 0;
+      border: 40px solid transparent;
+      border-bottom-color: rebeccapurple;
+      position: relative;
+      top: -40px;
+    }
+
+.rhombus:after {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 40px;
+      width: 0;
+      height: 0;
+      border: 40px solid transparent;
+      border-top-color: rebeccapurple;
+}
